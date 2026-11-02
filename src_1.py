@@ -884,7 +884,8 @@ class Spider:
                 play_from.append(self._clean_name(source["name"]))
                 play_blocks.append("#".join(episodes))
         paired = list(zip(play_from, play_blocks))
-        paired.sort(key=lambda x: self._rank(x[0]))
+        # 安全排序：包含“新咕噜”的置顶，其余按原规则排序
+        paired.sort(key=lambda x: (0 if "新咕噜" in x[0] else 1, self._rank(x[0])))
 
         vod = {
             "vod_id": detail["id"],
