@@ -55,15 +55,6 @@
       "filterable": 1
     },
     {
-      "key": "py_7",
-      "name": "[4K]枫叶",
-      "type": 3,
-      "api": "https://cdn.jsdelivr.net/gh/ailin5204/tvbox_perfect@main/src_7.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "py_3",
       "name": "ᵀ⁴TT",
       "type": 3,
